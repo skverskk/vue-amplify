@@ -1,60 +1,33 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <v-app-bar app color="#222222" class="orange--text text px-4" min-height="68px">
+      <v-app-bar-nav-icon color="white" :to="{ name: 'Home' }"></v-app-bar-nav-icon>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+      <v-toolbar-title class="display-1 darken-4">Ken Skversky</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
+      <v-btn class="white--text px-4 font-weight-regular" text>Log In</v-btn>
 
-    <v-content>
-      <HelloWorld/>
-    </v-content>
+      <v-btn class="white--text px-4 font-weight-regular" text>Sign Up</v-btn>
+    </v-app-bar>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+// import HelloWorld from "./components/HelloWorld";
+// import Test from "./components/Test";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    // Test
+    // Test
   },
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
